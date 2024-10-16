@@ -7,6 +7,8 @@ export const InputField = ({ label, type, value, onValueChange }) => {
       <input
         className="input-field__input"
         type={type}
+        value={value}
+        onChange={(e) => onValueChange(e.target.value)}
       />
     </div>
   );
