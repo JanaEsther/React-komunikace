@@ -24,7 +24,7 @@ export const Ukol4 = () => {
   return (
     <>
       <p>
-        Jméno:<strong>{jmeno}</strong>
+        Jméno: <strong>{jmeno}</strong>
       </p>
       <InputField
         label="Jméno"
