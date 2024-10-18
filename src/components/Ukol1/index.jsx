@@ -9,7 +9,7 @@ Zadání: Začneme velmi jednoduše. Zařiďte, aby se po kliknutí na tlačítk
 export const Ukol1 = () => {
   const [jmeno, setJmeno] = useState('Jirka');
 
-  const names = ['Jirka', 'Honza', 'Tomáš', 'Šimon'];
+
 
   return (
     <>
@@ -17,8 +17,10 @@ export const Ukol1 = () => {
         <strong>{jmeno}</strong>
       </p>
       <div>
-        {names.map((name) => (<button key={name} onClick={() => setJmeno(name)}>{name}</button>
-        ))}
+        <button onClick={()=>{setJmeno('Jirka')}}>Jirka</button>
+        <button onClick={()=>{setJmeno('Honza')}}>Honza</button>
+        <button onClick={()=>{setJmeno('Tomáš')}}>Tomáš</button>
+        <button onClick={()=>{setJmeno('Šimon')}}>Šimon</button>
       </div>
     </>
   );
